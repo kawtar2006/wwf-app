@@ -38,28 +38,60 @@
       font-family: Arial, sans-serif;
     }
     .hero {
-      position: relative;
-  height: 80vh;
-  background-image: url('image/hero.jpg'); /* changer l'image ici */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-  padding: 100px 40px;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-
-    }
+    position: relative;
+    height: 80vh; /* hauteur relative à la fenêtre */
+    min-height: 400px; /* minimum pour petits écrans */
+    background-image: url('image/hero.jpg'); /* changer l'image ici */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* pour empiler le texte et boutons */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 5% 10%; /* padding relatif pour s’adapter aux écrans */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
     .hero h1 {
-      font-size: 3rem;
-      font-weight: bold;
+    font-size: clamp(2rem, 5vw, 4rem); /* s’adapte à la taille de l’écran */
+    margin-bottom: 20px;
     }
     .hero p {
-      font-size: 1.3rem;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin-bottom: 30px;
+}
+/* Bouton responsive */
+.hero .btn {
+    padding: 10px 25px;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+    background-color: #4CAF50; /* couleur modifiable */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #45a049;
+}
+/* Media queries pour petits écrans */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        padding: 5% 5%;
     }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        height: 50vh;
+        padding: 5% 3%;
+    }
+}
     
     section {
       padding: 60px 20px;
