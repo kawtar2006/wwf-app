@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10th World Water Forum</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    .navbar-brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: white !important;
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 30px;
+      margin-left: 10px;
+    }
+
+    @media (max-width: 576px) {
+      .navbar-brand {
+        font-size: 1.2rem;
+      }
+
+      .navbar-brand img {
+        height: 24px;
+        margin-left: 6px;
+      }
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      position: relative;
+  height: 80vh;
+  background-image: url('image/hero.jpg'); /* changer l'image ici */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 100px 40px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.3rem;
+    }
+    
+    section {
+      padding: 60px 20px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">WWF 10
+      <img src="image/logoo.png" alt="Logo 1" style="height:70px; margin-left:10px;">
+      <img src="image/logooo.png" alt="Logo 2" style="height:70px; margin-left:10px;">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+        <li class="nav-item"><a class="nav-link" href="#side-events">Side Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#documentation">Documentation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#films">Films</a></li>
+        <li class="nav-item"><a class="nav-link" href="#social-media">Social Media</a></li>
+        <li class="nav-item"><a class="nav-link" href="#prize">King Hassan II Prize</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+</header>
+
+
+<!-- Program Section -->
+<!-- PROGRAM SECTION -->
+<section id="program" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4" style="color: #007BFF;">Program</h2>
+    <p class="mb-4 text-secondary">Details about the official program of the 10th World Water Forum.</p>
+
+    <input type="checkbox" id="toggle-program" style="display:none;" />
+
+    <label for="toggle-program" class="btn btn-primary btn-lg px-4" style="border-radius: 30px; font-weight: 600; cursor: pointer;">
+      Découvrir le programme
+    </label>
+
+    <div class="program-content mt-4 text-start" style="max-width: 800px; margin: 0 auto; display:none;">
+
+      <h4 class="mb-3" style="color: #0056b3;">
+        <i class="fas fa-calendar-alt me-2"></i> Side Events
+      </h4>
+      <p>Descriptions des événements parallèles organisés en marge du forum.</p>
+
+      <h4 class="mb-3" style="color: #0056b3;">
+        <i class="fas fa-book me-2"></i> Documentation
+      </h4>
+      <p>Accès aux documents officiels, rapports et ressources.</p>
+
+      <h4 class="mb-3" style="color: #0056b3;">
+        <i class="fas fa-film me-2"></i> Films
+      </h4>
+      <p>Projection de films et documentaires sur l’eau et l’environnement.</p>
+
+      <h4 class="mb-3" style="color: #0056b3;">
+        <i class="fas fa-hashtag me-2"></i> Social Media
+      </h4>
+      <p>Suivez nos réseaux sociaux pour rester informés en temps réel.</p>
+
+      <h4 class="mb-3" style="color: #0056b3;">
+        <i class="fas fa-trophy me-2"></i> King Hassan II Great World Water Prize
+      </h4>
+      <p>Présentation du prix prestigieux et des lauréats.</p>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  #toggle-program:checked ~ .program-content {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+</style>
+
+<!-- FontAwesome pour icônes -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+<!-- Side Events Section -->
+<section id="Program Side-Events" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Side Events</h2>
+    <div class="row justify-content-center">
+      
+      <!-- Version Française -->
+      <div class="col-md-4 mb-3">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <img src="image/fr.png" alt="FR" width="80" class="mb-3">
+            <h5 class="card-title">Version Française</h5>
+            <p class="card-text">Consultez le programme des Side Events en français.</p>
+            <a href="document/side-events-fr.pdf" target="_blank" class="btn btn-primary">Voir</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- English Version -->
+      <div class="col-md-4 mb-3">
+        <div class="card text-center shadow-sm">
+          <div class="card-body">
+            <img src="image/en.jpeg" alt="EN" width="80" class="mb-3">
+            <h5 class="card-title">English Version</h5>
+            <p class="card-text">Check out the Side Events program in English.</p>
+            <a href="document/side-events-en.pdf" target="_blank" class="btn btn-success">View</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Documentation Section -->
+<section id="documentation" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Documentation</h2>
+
+    <!-- Onglets -->
+    <ul class="nav nav-tabs justify-content-center" id="docTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="docs-tab" data-bs-toggle="tab" data-bs-target="#docs" type="button" role="tab">
+          📄 Documentation
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button" role="tab">
+          🎥 Vidéos
+        </button>
+      </li>
+    </ul>
+
+    <!-- Contenu des onglets -->
+    <div class="tab-content mt-4" id="docTabsContent">
+
+      <!-- Onglet Documentation -->
+      <div class="tab-pane fade show active" id="docs" role="tabpanel">
+        <div class="row">
+          <!-- Logos 1 à 10 -->
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo1.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo1">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo2.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo2">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo3.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo3">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo4.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo4">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo5.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo5">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo6.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo6">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo7.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo7">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo8.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo8">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo9.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo9">
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 text-center">
+            <img src="image/logo10.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalLogo10">
+          </div>
+        </div>
+      </div>
+
+      <!-- Onglet Vidéos -->
+      <!-- Onglet Vidéos -->
+<div class="tab-pane fade" id="videos" role="tabpanel">
+  <div class="row">
+    <!-- Logo 1 Vidéos -->
+    <!-- ---------- Logo Vidéo 1 (à placer DANS la tab-pane #videos) ---------- -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo1.png" class="img-fluid clickable" alt="Logo1"
+       data-bs-toggle="modal" data-bs-target="#modalVideo1">
+</div>
+
+<!-- Modal pour Logo 1 : pills internes pour les 4 icônes -->
+<div class="modal fade" id="modalVideo1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos — Logo 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Nav pills (icônes) -->
+        <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-abhoer-tab" data-bs-toggle="pill" data-bs-target="#pills-abhoer" type="button" role="tab" aria-controls="pills-abhoer" aria-selected="true">
+              ABHOER <br><small>6 vidéos</small>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-abhs-tab" data-bs-toggle="pill" data-bs-target="#pills-abhs" type="button" role="tab" aria-controls="pills-abhs" aria-selected="false">
+              ABHS <br><small>1 vidéo</small>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-abhsm-tab" data-bs-toggle="pill" data-bs-target="#pills-abhsm" type="button" role="tab" aria-controls="pills-abhsm" aria-selected="false">
+              ABHSM <br><small>1 vidéo</small>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-abht-tab" data-bs-toggle="pill" data-bs-target="#pills-abht" type="button" role="tab" aria-controls="pills-abht" aria-selected="false">
+              ABHT <br><small>1 vidéo</small>
+            </button>
+          </li>
+        </ul>
+
+        <!-- Contenu des pills -->
+        <div class="tab-content" id="pills-tabContent">
+
+          <!-- ABHOER (6 vidéos) -->
+          <div class="tab-pane fade show active" id="pills-abhoer" role="tabpanel" aria-labelledby="pills-abhoer-tab">
+            <div class="container">
+              <div class="row g-3">
+                <!-- Répète / adapte les iframes selon tes vidéos -->
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/f14btNfK1wQ" title="ABHOER 1" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/CI69Ct3GxVM" title="ABHOER 2" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/YdGf4dZXGkk" title="ABHOER 3" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/vj1FzUim2nc" title="ABHOER 4" allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/ZmP4R-K9B8Q" title="ABHOER 5" allowfullscreen></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/cjXTSXfJ-BQ" title="ABHOER 6" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ABHS (1 vidéo) -->
+          <div class="tab-pane fade" id="pills-abhs" role="tabpanel" aria-labelledby="pills-abhs-tab">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/YRsF1jN2o6s" title="ABHS" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- ABHSM (1 vidéo) -->
+          <div class="tab-pane fade" id="pills-abhsm" role="tabpanel" aria-labelledby="pills-abhsm-tab">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/8i6QGn0R5Yw" title="ABHSM" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- ABHT (1 vidéo) -->
+          <div class="tab-pane fade" id="pills-abht" role="tabpanel" aria-labelledby="pills-abht-tab">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/ZfHO-3tw9Y8" title="ABHT" allowfullscreen></iframe>
+            </div>
+          </div>
+
+        </div> <!-- /.tab-content -->
+      </div> <!-- /.modal-body -->
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ---------- FIN Logo Vidéo 1 ---------- -->
+ <!-- Logo 2 Vidéos -->
+    <!-- Logo Vidéo 2 -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo2.png" class="img-fluid" alt="Logo Vidéo 2"
+       data-bs-toggle="modal" data-bs-target="#modalVideo2">
+</div>
+
+<!-- Modal Logo Vidéo 2 -->
+<div class="modal fade" id="modalVideo2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéo - Logo 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Mets ton lien YouTube ou fichier vidéo -->
+        <iframe width="100%" height="400"
+                src="https://www.youtube.com/embed/hvphI-e-luI"
+                frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Logo 3 Vidéos -->
+    <!-- Logo Vidéo 3 -->
+<!-- Logo 3 -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo3.png" class="img-fluid clickable" 
+       data-bs-toggle="modal" data-bs-target="#modalLogo3">
+</div>
+
+<!-- Modal Logo 3 avec 7 vidéos -->
+<div class="modal fade" id="modalLogo3" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <!-- Vidéo 1 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/AHdOgsR5ej4" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 2 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Aqy_L9q2Z4g" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 3 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/tTKoHMG8vXo" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 4 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/8II9zYabrKk" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 5 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zhGS_UxJeCU" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 6 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/4jABYBXCqC4" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 7 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bGH6BrcYF80" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 4 Vidéos -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo4.png" class="img-fluid" alt="Logo Vidéo 4"
+       data-bs-toggle="modal" data-bs-target="#modalVideo4">
+ 
+</div>
+
+<!-- Modal Logo Vidéo 4 -->
+<div class="modal fade" id="modalVideo4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéo - Logo 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Mets ton lien YouTube ou fichier vidéo -->
+        <iframe width="100%" height="400"
+                src="https://www.youtube.com/embed/RSS7T2QL0l8"
+                frameborder="0" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 5 Vidéos -->
+    <!-- Logo 5 -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo5.png" class="img-fluid clickable" 
+       data-bs-toggle="modal" data-bs-target="#modalLogo5">
+</div>
+
+<!-- Modal Logo 5 avec 4 vidéos -->
+<div class="modal fade" id="modalLogo5" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <!-- Vidéo 1 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/b5mfNFaoNcQ " frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 2 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/L3Tqtsow1fk" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 3 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Uk10w2SprFs" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- Vidéo 4 -->
+          <div class="col-md-6 mb-3">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/KLJMu3kjTcU " frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 6 Vidéos -->
+    <!-- Logo 6 -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo6.png" class="img-fluid clickable" 
+       data-bs-toggle="modal" data-bs-target="#modalLogo6">
+</div>
+
+<!-- Modal Logo 6 avec 1 vidéo -->
+<div class="modal fade" id="modalLogo6" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/u_FF1Y-s4iU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 7 Vidéos -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo7.png" class="img-fluid clickable" 
+       data-bs-toggle="modal" data-bs-target="#modalLogo7">
+</div>
+
+<!-- Modal Logo 7 avec 1 vidéo -->
+<div class="modal fade" id="modalLogo7" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/N-3LLiSTXj4" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 8 Vidéos -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo8.png" class="img-fluid clickable" 
+       data-bs-toggle="modal" data-bs-target="#modalLogo8">
+</div>
+
+<!-- Modal Logo 8 avec 1 vidéo -->
+<div class="modal fade" id="modalLogo8" tabindex="-1">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 8</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/30Rk0ndb_mU" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Logo 9 Vidéos -->
+    <!-- Logo 9 Vidéos -->
+<div class="col-md-3 col-sm-6 mb-4 text-center">
+  <img src="image1/Logo9.png" class="img-fluid clickable" data-bs-toggle="modal" data-bs-target="#modalVideoLogo9">
+</div>
+
+<!-- Modal Logo 9 Vidéos -->
+<div class="modal fade" id="modalVideoLogo9" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos - Logo 9</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <!-- Vidéo 1 -->
+          <div class="col-6 mb-3 text-center">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/QpWSYZVi-GM" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <!-- Vidéo 2 -->
+          <div class="col-6 mb-3 text-center">
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/BpoWojguF8M" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</section>
+
+<!-- Modals (hors tab-content) -->
+<!-- Modal Logo 1 -->
+<div class="modal fade" id="modalLogo1" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo1/Brochure Version Française.pdf" target="_blank">📄 Brochure (FR)</a></li>
+          <li><a href="document/documentation/logo1/Brochure Version Anglaise.pdf" target="_blank">📄 Brochure (EN)</a></li>
+          <li><a href="document/documentation/logo1/Dépliant Version Française.pdf" target="_blank">📄 Dépliant (FR)</a></li>
+          <li><a href="document/documentation/logo1/Dépliant Version Anglaise.pdf" target="_blank">📄 Dépliant (EN)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 2 -->
+<div class="modal fade" id="modalLogo2" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo2/Panneaux BV ANEF.pdf" target="_blank">📄 PANNEAUX BV ANEF</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 3 -->
+<div class="modal fade" id="modalLogo3" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo3/Produits et services CRTS-VANG.pdf" target="_blank">📄 Produits et services CRTS-VANG</a></li>
+          <li><a href="document/documentation/logo3/Produits et services CRTS-VF.pdf" target="_blank">📄 Produits et services CRTS-VF</a></li>
+          <li><a href="document/documentation/logo3/Presentation CRTS.pdf" target="_blank">📄 Presentation CRTS</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 4 -->
+<div class="modal fade" id="modalLogo4" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 4</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo4/Esp Irrigation projet IAEA-DIAEA-VNH.pdf" target="_blank">📄 Esp Irrigation projet IAEA-DIAEA-VNH</a></li>
+          <li><a href="document/documentation/logo4/Esp Irrigation Chtouka DIAEA-VNH.pdf" target="_blank">📄Esp Irrigation Chtouka DIAEA-VNH</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 5 -->
+<div class="modal fade" id="modalLogo5" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 5</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo5/SIDE-EVENT AU PAVILLON MAROC.pdf" target="_blank">📄SIDE-EVENT AU PAVILLON MAROC</a></li>
+          <li><a href="document/documentation/logo5/POSTER BENI AMIR.pdf" target="_blank">📄POSTER BENI AMIR</a></li>
+          <li><a href="document/documentation/logo5/POSTER LARABI EMI GHIS NEKOR.pdf" target="_blank">📄POSTER LARABI EMI GHIS NEKOR</a></li>
+          <li><a href="document/documentation/logo5/POSTER LARABI EMI LAAYOUNE.pdf" target="_blank">📄POSTER LARABI EMI LAAYOUNE</a></li>
+          <li><a href="document/documentation/logo5/POSTER LARABI EMI RMEI.pdf" target="_blank">📄POSTER LARABI EMI RMEI</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 6 -->
+<div class="modal fade" id="modalLogo6" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 6</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo6/POSTER MUSÉE.pdf" target="_blank">📄POSTER MUSÉE</a></li>
+          <li><a href="document/documentation/logo6/ROLL UP MUSÉE AMAN VERSION EN.pdf" target="_blank">📄ROLL UP MUSÉE AMAN VERSION EN</a></li>
+          <li><a href="document/documentation/logo6/ROLL UP MUSÉE AMAN VERSION FR.pdf" target="_blank">📄ROLL UP MUSÉE AMAN VERSION FR</a></li>
+          <li><a href="document/documentation/logo6/DEPLAINT MUSÉE AR.pdf" target="_blank">📄DEPLAINT MUSÉE AR</a></li>
+          <li><a href="document/documentation/logo6/DEPLAINT MUSÉE EN.pdf" target="_blank">📄DEPLAINT MUSÉE EN</a></li>
+          <li><a href="document/documentation/logo6/DEPLAINT MUSÉE FR.pdf" target="_blank">📄DEPLAINT MUSÉE FR</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 7 -->
+<div class="modal fade" id="modalLogo7" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 7</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo7/Rollup Eng Bouchaou.pdf" target="_blank">📄 Rollup Eng Bouchaou</a></li>
+          <li><a href="document/documentation/logo7/Geantech poster Eng Bouchaou.pdf" target="_blank">📄 Geantech poster Eng Bouchaou</a></li>
+          <li><a href="document/documentation/logo7/Brochure Eng Siam Bouchaou.pdf" target="_blank">📄Brochure Eng Siam Bouchaou</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 8 -->
+<div class="modal fade" id="modalLogo8" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 8</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo8/Dépliant AR.pdf" target="_blank">📄Dépliant AR</a></li>
+          <li><a href="document/documentation/logo8/Dépliant FR.pdf" target="_blank">📄Dépliant FR</a></li>
+          <li><a href="document/documentation/logo8/Plaquette AR.pdf" target="_blank">📄Plaquette AR</a></li>
+          <li><a href="document/documentation/logo8/Dépliant ANG.pdf" target="_blank">📄Dépliant ANG</a></li>
+          <li><a href="document/documentation/logo8/Plaquette FR.pdf" target="_blank">📄Plaquette FR</a></li>
+          <li><a href="document/documentation/logo8/ROLLUP DESSALEMENT AR FR UK.pdf" target="_blank">📄ROLLUP DESSALEMENT AR FR UK</a></li>
+          <li><a href="document/documentation/logo8/ROLLUP-INSTI FR ANG.pdf" target="_blank">📄ROLLUP-INSTI FR ANG</a></li>
+          <li><a href="document/documentation/logo8/ROLLUP-INSTIT COOPERATION.pdf" target="_blank">📄ROLLUP-INSTIT COOPERATION</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 9 -->
+<div class="modal fade" id="modalLogo9" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 9</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo9/PRESENTATION OCP GREEN WATER.pdf" target="_blank">📄PRESENTATION OCP GREEN WATER</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Logo 10 -->
+<div class="modal fade" id="modalLogo10" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Documentation - Logo 10</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li><a href="document/documentation/logo10/SIDE EVENT.pdf" target="_blank">📄SIDE EVENT</a></li>
+          <li><a href="document/documentation/logo10/ELHAJJAJI BIOCHAR.pdf" target="_blank">📄ELHAJJAJI BIOCHAR</a></li>
+          <li><a href="document/documentation/logo10/BIOCHAR WETLANDS AIEAU.pdf" target="_blank">📄BIOCHAR WETLANDS AIEAU</a></li>
+          <li><a href="document/documentation/logo10/ALKHAWARIZMI ELHAJJAJI AI.pdf" target="_blank">📄ALKHAWARIZMI ELHAJJAJI AI</a></li>
+          <li><a href="document/documentation/logo10/DSISDQE PR ELHAJJAJI.pdf" target="_blank">📄DSISDQE PR ELHAJJAJI</a></li>
+          <li><a href="document/documentation/logo10/P NPP-SOL PR ELHAJJAJI.pdf" target="_blank">📄 P NPP-SOL PR ELHAJJAJI</a></li>
+          <li><a href="document/documentation/logo10/P TELE-NITRO PR ELHAJJAJI.pdf" target="_blank">📄P TELE-NITRO PR ELHAJJAJI</a></li>
+          <li><a href="document/documentation/logo10/PRIMA BOUYAHYA OLIVE STONE.pdf" target="_blank">📄PRIMA BOUYAHYA OLIVE STONE</a></li>
+          <li><a href="document/documentation/logo10/BENNIS ERA SMUS+MATHIKS.pdf" target="_blank">📄BENNIS ERA SMUS+MATHIKS</a></li>
+          <li><a href="document/documentation/logo10/PRIMA ELHAJJAJI NPP-SOL.pdf" target="_blank">📄PRIMA ELHAJJAJI NPP-SOL</a></li>
+          <li><a href="document/documentation/logo10/N3 PRIMA ELHAJJAJI PRIMA MEDPEST.pdf" target="_blank">📄N3 PRIMA ELHAJJAJI PRIMA MEDPEST</a></li>
+          <li><a href="document/documentation/logo10/PRIMA ELHAJJAJI TELE-NITRO.pdf" target="_blank">📄PRIMA ELHAJJAJI TELE-NITRO</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Logo Vidéo 2 -->
+<div class="modal fade" id="modalVideo2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Vidéos Logo 2</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Mets les vidéos du logo 2 -->
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/f14btNfK1wQ" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      
+<!-- Films Section -->
+<section id="films" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Films</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-lg-6 mb-3 mx-auto">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/XshNNl8JQHA"
+                  title="Film 1" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media Section -->
+<!-- SOCIAL MEDIA SECTION -->
+<section id="social-media" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Social Media</h2>
+    <div class="row justify-content-center text-center">
+
+      <!-- Facebook -->
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.facebook.com/equipement.eau.maroc/" target="_blank" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 p-3">
+            <i class="fab fa-facebook fa-3x mb-2 text-primary"></i>
+            <h5 class="card-title">Facebook</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.youtube.com/embed/kF2CWUWYF24" target="_blank" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 p-3">
+            <i class="fab fa-youtube fa-3x mb-2 text-danger"></i>
+            <h5 class="card-title">YouTube</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Instagram -->
+      <div class="col-6 col-md-4 mb-4">
+        <a href="https://www.instagram.com/equipement_eau/" target="_blank" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 p-3">
+            <i class="fab fa-instagram fa-3x mb-2 text-gradient"></i>
+            <h5 class="card-title">Instagram</h5>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Prize Section -->
+<!-- Prize Section (Modernized) -->
+<!-- Prize Section (Modern, Responsive, Fixed Image) -->
+<section id="prize" class="py-5 bg-light text-dark">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="display-5 fw-bold mb-3">🌍 King Hassan II Great World Water Prize</h2>
+      <p class="fs-5 text-muted fst-italic">
+        “Securing water resources for food sovereignty and shared prosperity”
+      </p>
+    </div>
+
+    <div class="text-center mb-4">
+  <img src="image/logo.jpeg" 
+       alt="Prize Banner" 
+       class="img-fluid rounded-4 shadow-sm border border-2 border-white animate__animated animate__fadeInUp"
+       style="max-height: 300px;">
+</div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <p class="fs-6 mb-3">
+          Jointly established by the <strong>Kingdom of Morocco</strong> and the <strong>World Water Council</strong>, this Prize pays tribute to the memory of His Majesty the late King Hassan II, and to his strategic vision for sustainable integrated water resources management.
+        </p>
+
+        <p class="fs-6 mb-3">
+          The Prize is awarded every three years at the World Water Forum to individuals or organizations that have made remarkable efforts to protect and manage water resources, raise awareness, and promote global cooperation.
+        </p>
+
+        <p class="fs-6 mb-4">
+          The 2024 edition will be awarded at the <strong>10th World Water Forum in Bali, Indonesia</strong>. Past editions include Kyoto, Mexico City, Istanbul, Marseille, Daegu-Gyeongbuk, Brasília, and Dakar.
+        </p>
+
+        <div class="text-center">
+          <a href="https://www.hassan2gwwp.org" target="_blank" class="btn btn-primary btn-lg px-4 shadow-sm">
+            🌐 Visit Official Site
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 10th World Water Forum | Ministère de l'Équipement et de l'Eau</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"></script>
+<script async src="//www.instagram.com/embed.js"></script>
+</body>
+</html>
